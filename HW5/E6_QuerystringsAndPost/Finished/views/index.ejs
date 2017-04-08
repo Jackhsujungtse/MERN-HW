@@ -17,6 +17,8 @@
 				data: JSON.stringify({ firstname: 'Jane', lastname: 'Doe' }),
 				dataType: 'json',
 				contentType: 'application/json'
+			}).done(function(data){
+				$("h1").html(data["message"]);
 			});
 		</script>
 	</body>
